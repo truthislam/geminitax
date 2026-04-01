@@ -39,16 +39,17 @@ export default function Testimonials() {
                
                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
                   <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
-                     {/* Gradient Avatar */}
-                     <div style={{ width: 48, height: 48, borderRadius: '50%', background: 'linear-gradient(135deg, var(--color-accent), #8b5cf6)', color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 700, fontSize: '1.25rem', boxShadow: 'var(--shadow-md)' }}>
+                     {/* Solid Navy Avatar */}
+                     <div style={{ width: 48, height: 48, borderRadius: '50%', background: 'var(--color-primary)', color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 700, fontSize: '1.25rem', boxShadow: 'var(--shadow-md)' }}>
                         {review.initials}
                      </div>
                      <div>
                         <div style={{ fontWeight: 700, color: 'var(--color-heading)', fontSize: '1.05rem', display: 'flex', alignItems: 'center', gap: '0.35rem', letterSpacing: '-0.02em', fontFamily: 'Plus Jakarta Sans, sans-serif' }}>
                            {review.name}
                            {/* Trust Badge */}
-                           <FiCheckCircle size={15} color="#3b82f6" />
+                           <FiCheckCircle size={15} color="var(--color-primary)" />
                         </div>
+
                         <div style={{ fontSize: '0.85rem', color: 'var(--color-text-muted)', fontWeight: 500, marginTop: '0.1rem', fontFamily: 'Plus Jakarta Sans, sans-serif' }}>{review.role}</div>
                      </div>
                   </div>

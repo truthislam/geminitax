@@ -2,13 +2,14 @@
 
 :root {
   /* Enterprise SaaS Color Palette */
-  --color-primary: #0f172a; /* Extremely rich deep slate */
-  --color-heading: #020617; /* Near black with blue undertone */
+  --color-primary: #0f172a; /* Main Navy Blue */
+  --color-heading: #020617; /* Near black */
   --color-text: #334155;
   --color-text-muted: #64748b;
-  --color-accent: #2563eb;
-  --color-accent-hover: #1d4ed8;
-  --color-accent-light: #eff6ff;
+  --color-accent: #0f172a; /* Unified Navy */
+  --color-accent-hover: #1e293b;
+  --color-accent-light: #f1f5f9;
+
   --color-surface: #ffffff;
   --color-surface-soft: #f8fafc;
   --color-border: #e2e8f0;

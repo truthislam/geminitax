@@ -5,13 +5,13 @@ export default function MeetFounder() {
   const imagePath = "/founder_portrait.png";
   
   return (
-    <section className="founder-section" style={{ position: 'relative', background: '#f8fafc', padding: '8rem 0 0 0', overflow: 'visible' }}>
+    <section className="founder-section" style={{ position: 'relative', background: 'var(--color-surface-soft)', padding: '8rem 0 0 0', overflow: 'visible' }}>
       <div className="container">
         <div style={{ 
           display: 'grid', 
           gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
           alignItems: 'stretch',
-          backgroundColor: '#004080',
+          backgroundColor: 'var(--color-primary)',
           borderRadius: '2rem',
           overflow: 'visible',
           boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.15)'
@@ -81,7 +81,7 @@ export default function MeetFounder() {
               <div style={{ 
                 width: '60px', 
                 height: '4px', 
-                backgroundColor: 'var(--color-accent)', 
+                backgroundColor: 'rgba(255,255,255,0.2)', 
                 marginBottom: '2rem',
                 borderRadius: '999px' 
               }} />
@@ -107,6 +107,7 @@ export default function MeetFounder() {
 
         </div>
       </div>
+
       
       {/* Spacer for the bottom section since we cut padding to 0 at bottom of top section */}
       <div style={{ height: '8rem' }} />

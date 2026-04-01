@@ -26,14 +26,15 @@ export default function Hero() {
       {/* Absolute Ambient Void Layer */}
       <div className="ambient-mesh" style={{
         position: 'absolute', top: '-20%', left: '-10%', width: '70vw', height: '70vw',
-        background: 'radial-gradient(circle, rgba(37,99,235,0.08) 0%, rgba(255,255,255,0) 70%)',
+        background: 'radial-gradient(circle, rgba(15,23,42,0.08) 0%, rgba(255,255,255,0) 70%)',
         zIndex: 0, filter: 'blur(60px)', pointerEvents: 'none'
       }} />
       <div className="ambient-mesh" style={{
         position: 'absolute', top: '20%', right: '-10%', width: '50vw', height: '50vw',
-        background: 'radial-gradient(circle, rgba(139,92,246,0.06) 0%, rgba(255,255,255,0) 70%)',
+        background: 'radial-gradient(circle, rgba(15,23,42,0.06) 0%, rgba(255,255,255,0) 70%)',
         zIndex: 0, filter: 'blur(60px)', pointerEvents: 'none'
       }} />
+
 
       <div className="container hero-grid" style={{ zIndex: 10, position: 'relative' }}>
         

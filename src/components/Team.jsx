@@ -6,32 +6,34 @@ const teamMembers = [
     name: "Faisal Riaz",
     role: "Data Analytics Advisory",
     initials: "FR",
-    color: "linear-gradient(135deg, #2563eb, #1d4ed8)",
+    color: "var(--color-primary)",
     bio: "With over 20 years in the industry, Faisal uses data and AI to build forecasting dashboards that let you see the future of your business."
   },
   {
     name: "Abhay Gandhi, CPA",
     role: "Manager, Strategic Tax",
     initials: "AG",
-    color: "linear-gradient(135deg, #8b5cf6, #6d28d9)",
+    color: "var(--color-primary)",
     bio: "Expert in international and cross-border tax. Abhay builds global tax strategies that protect your wealth and satisfy multi-national requirements."
   },
   {
     name: "Kelly Tran",
     role: "Senior Accountant",
     initials: "KT",
-    color: "linear-gradient(135deg, #10b981, #059669)",
+    color: "var(--color-primary)",
     bio: "Ensures your taxes and financial reports are 100% accurate and on time. Kelly holds an MBA and keeps your business fully compliant."
   }
 ];
+
 
 export default function Team() {
   return (
     <section id="team" className="section team-section" style={{ backgroundColor: 'var(--color-surface-soft)', borderTop: '1px solid var(--color-border)', position: 'relative', overflow: 'hidden' }}>
       
       {/* Ambient Depth */}
-      <div className="ambient-mesh" style={{ position: 'absolute', top: '10%', right: '-10%', width: '40vw', height: '40vw', background: 'radial-gradient(circle, rgba(139,92,246,0.06) 0%, rgba(255,255,255,0) 70%)', filter: 'blur(60px)', pointerEvents: 'none' }} />
-      <div className="ambient-mesh" style={{ position: 'absolute', bottom: '-10%', left: '-10%', width: '40vw', height: '40vw', background: 'radial-gradient(circle, rgba(37,99,235,0.06) 0%, rgba(255,255,255,0) 70%)', filter: 'blur(60px)', pointerEvents: 'none' }} />
+      <div className="ambient-mesh" style={{ position: 'absolute', top: '10%', right: '-10%', width: '40vw', height: '40vw', background: 'radial-gradient(circle, rgba(15,23,42,0.06) 0%, rgba(255,255,255,0) 70%)', filter: 'blur(60px)', pointerEvents: 'none' }} />
+      <div className="ambient-mesh" style={{ position: 'absolute', bottom: '-10%', left: '-10%', width: '40vw', height: '40vw', background: 'radial-gradient(circle, rgba(15,23,42,0.06) 0%, rgba(255,255,255,0) 70%)', filter: 'blur(60px)', pointerEvents: 'none' }} />
+
 
       <div className="container" style={{ position: 'relative', zIndex: 10 }}>
         
