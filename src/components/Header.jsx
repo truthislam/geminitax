@@ -1,11 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import { motion, useScroll, useMotionValueEvent, AnimatePresence } from 'framer-motion';
 import { FiMenu, FiX } from 'react-icons/fi';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 
 export default function Header() {
   const { scrollY } = useScroll();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate = useNavigate();
+  const location = useLocation();
 
   // Trigger floating pill effect when scrolled past 50px
   useMotionValueEvent(scrollY, "change", (latest) => {
@@ -25,10 +28,25 @@ export default function Header() {
   }, [isMenuOpen]);
 
   const navLinks = [
-    { name: 'Services', href: '#core-competencies' },
-    { name: 'Our Process', href: '#process' },
-    { name: 'Meet The Team', href: '#team' }
+    { name: 'Services', href: '/#core-competencies' },
+    { name: 'Our Process', href: '/#process' },
+    { name: 'Meet The Team', href: '/about' }
   ];
+
+  const handleLinkClick = (href) => {
+    setIsMenuOpen(false);
+    if (href.startsWith('/#')) {
+      if (location.pathname === '/') {
+        const id = href.replace('/#', '');
+        const element = document.getElementById(id);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      } else {
+        navigate(href);
+      }
+    }
+  };
 
   const menuVariants = {
     closed: {
@@ -70,7 +88,13 @@ export default function Header() {
         
         <div className="logo">
           <motion.h2 
-            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            onClick={() => {
+              if (location.pathname === '/') {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              } else {
+                navigate('/');
+              }
+            }}
             whileHover={{ scale: 1.02 }} 
             style={{ cursor: 'pointer', fontFamily: 'Playfair Display, serif', fontSize: '1.75rem', margin: 0, position: 'relative', zIndex: 102 }}
           >
@@ -81,14 +105,29 @@ export default function Header() {
         {/* Desktop Nav */}
         <nav className="nav" style={{ display: 'flex', gap: '2.5rem', alignItems: 'center' }}>
           {navLinks.map((link) => (
-            <motion.a 
-              key={link.name}
-              href={link.href} 
-              style={{ color: 'var(--color-heading)', textDecoration: 'none', fontWeight: 600, fontSize: '0.95rem', position: 'relative' }}
-              whileHover={{ color: 'var(--color-accent)' }}
-            >
-              {link.name}
-            </motion.a>
+            link.href.startsWith('/#') ? (
+              <a 
+                key={link.name}
+                href={link.href}
+                onClick={(e) => {
+                  if (location.pathname === '/') {
+                    e.preventDefault();
+                    handleLinkClick(link.href);
+                  }
+                }}
+                style={{ color: 'var(--color-heading)', textDecoration: 'none', fontWeight: 600, fontSize: '0.95rem', position: 'relative' }}
+              >
+                <motion.span whileHover={{ color: 'var(--color-accent)' }}>{link.name}</motion.span>
+              </a>
+            ) : (
+              <Link
+                key={link.name}
+                to={link.href}
+                style={{ color: 'var(--color-heading)', textDecoration: 'none', fontWeight: 600, fontSize: '0.95rem', position: 'relative' }}
+              >
+                <motion.span whileHover={{ color: 'var(--color-accent)' }}>{link.name}</motion.span>
+              </Link>
+            )
           ))}
         </nav>
 
@@ -103,15 +142,19 @@ export default function Header() {
           >
             Client Portal
           </motion.a>
-          <motion.a 
-            href="#contact" 
+          <button 
+            onClick={() => {
+              if (location.pathname === '/') {
+                document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+              } else {
+                navigate('/#contact');
+              }
+            }}
             className="btn btn-primary"
-            style={{ padding: '0.5rem 1.5rem', fontSize: '0.875rem', borderRadius: '999px', fontWeight: 600 }}
-            whileHover={{ y: -1, scale: 1.02, boxShadow: "0 10px 15px -3px rgba(37, 99, 235, 0.2)" }}
-            whileTap={{ scale: 0.98 }}
+            style={{ padding: '0.5rem 1.5rem', fontSize: '0.875rem', borderRadius: '999px', fontWeight: 600, border: 'none', cursor: 'pointer' }}
           >
             Get Started
-          </motion.a>
+          </button>
         </div>
 
         {/* Mobile Toggle Button */}
@@ -152,21 +195,42 @@ export default function Header() {
           >
             <div style={{ display: 'flex', flexDirection: 'column', gap: '1.25rem' }}>
               {navLinks.map((link) => (
-                <motion.a 
-                  key={link.name}
-                  href={link.href} 
-                  onClick={() => setIsMenuOpen(false)}
-                  style={{ 
-                    color: 'var(--color-heading)', 
-                    textDecoration: 'none', 
-                    fontWeight: 600, 
-                    fontSize: '1.125rem',
-                    padding: '0.5rem 0'
-                  }}
-                  whileHover={{ x: 5, color: 'var(--color-accent)' }}
-                >
-                  {link.name}
-                </motion.a>
+                link.href.startsWith('/#') ? (
+                  <a 
+                    key={link.name}
+                    href={link.href}
+                    onClick={(e) => {
+                      if (location.pathname === '/') {
+                        e.preventDefault();
+                      }
+                      handleLinkClick(link.href);
+                    }}
+                    style={{ 
+                      color: 'var(--color-heading)', 
+                      textDecoration: 'none', 
+                      fontWeight: 600, 
+                      fontSize: '1.125rem',
+                      padding: '0.5rem 0'
+                    }}
+                  >
+                    {link.name}
+                  </a>
+                ) : (
+                  <Link
+                    key={link.name}
+                    to={link.href}
+                    onClick={() => setIsMenuOpen(false)}
+                    style={{ 
+                      color: 'var(--color-heading)', 
+                      textDecoration: 'none', 
+                      fontWeight: 600, 
+                      fontSize: '1.125rem',
+                      padding: '0.5rem 0'
+                    }}
+                  >
+                    {link.name}
+                  </Link>
+                )
               ))}
             </div>
 
@@ -179,14 +243,20 @@ export default function Header() {
               >
                 Client Portal
               </motion.a>
-              <motion.a 
-                href="#contact" 
+              <button 
+                onClick={() => {
+                  setIsMenuOpen(false);
+                  if (location.pathname === '/') {
+                    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                  } else {
+                    navigate('/#contact');
+                  }
+                }}
                 className="btn btn-primary"
-                style={{ width: '100%', justifyContent: 'center', padding: '1rem' }}
-                onClick={() => setIsMenuOpen(false)}
+                style={{ width: '100%', justifyContent: 'center', padding: '1rem', border: 'none', cursor: 'pointer' }}
               >
                 Get Started
-              </motion.a>
+              </button>
             </div>
           </motion.div>
         )}
@@ -194,3 +264,4 @@ export default function Header() {
     </motion.header>
   );
 }
+

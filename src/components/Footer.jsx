@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
@@ -17,11 +18,11 @@ export default function Footer() {
         <div style={{ flex: 1 }}>
           <h4 style={{ fontSize: '1.15rem', marginBottom: '1.5rem', color: 'white', fontWeight: 600 }}>Navigate</h4>
           <ul style={{ listStyle: 'none', padding: 0, margin: 0, display: 'flex', flexDirection: 'column', gap: '1rem' }}>
-            <li><a href="#core-competencies" style={{ color: '#94a3b8', textDecoration: 'none', transition: 'color 0.2s', ':hover': { color: 'white' } }}>Our Services</a></li>
-            <li><a href="#process" style={{ color: '#94a3b8', textDecoration: 'none' }}>Our Process</a></li>
-            <li><a href="#team" style={{ color: '#94a3b8', textDecoration: 'none' }}>Meet The Team</a></li>
+            <li><a href="/#core-competencies" style={{ color: '#94a3b8', textDecoration: 'none', transition: 'color 0.2s' }}>Our Services</a></li>
+            <li><a href="/#process" style={{ color: '#94a3b8', textDecoration: 'none' }}>Our Process</a></li>
+            <li><Link to="/about" style={{ color: '#94a3b8', textDecoration: 'none' }}>Meet The Team</Link></li>
             <li><a href="https://gemini.taxdome.com/" style={{ color: '#94a3b8', textDecoration: 'none' }}>Client Portal</a></li>
-            <li><a href="/blogs" style={{ color: '#94a3b8', textDecoration: 'none' }}>Blogs</a></li>
+            <li><Link to="/blogs" style={{ color: '#94a3b8', textDecoration: 'none' }}>Blogs</Link></li>
           </ul>
         </div>
 
@@ -56,10 +57,11 @@ export default function Footer() {
       <div className="container" style={{ borderTop: '1px solid #334155', paddingTop: '2.5rem', display: 'flex', flexWrap: 'wrap', justifyContent: 'space-between', color: '#64748b', fontSize: '0.9rem', gap: '1rem' }}>
         <div>Copyright © 2026 Gemini Accounting Services. All rights reserved. Powered by BokudenDigital.</div>
         <div style={{ display: 'flex', gap: '2rem' }}>
-          <a href="/privacy-policy" style={{ color: '#64748b', textDecoration: 'none' }}>Privacy Policy</a>
-          <a href="/terms-conditions" style={{ color: '#64748b', textDecoration: 'none' }}>Terms & Conditions</a>
+          <Link to="/privacy-policy" style={{ color: '#64748b', textDecoration: 'none' }}>Privacy Policy</Link>
+          <Link to="/terms-conditions" style={{ color: '#64748b', textDecoration: 'none' }}>Terms & Conditions</Link>
         </div>
       </div>
     </footer>
   );
 }
+
