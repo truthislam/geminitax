@@ -16,12 +16,12 @@ export default function Services() {
     },
     {
       title: "Trust & Estate Planning",
-      desc: "Wealth transfers without a strategy become wealth losses. We protect your estate so it reaches the people you intend — intact.",
+      desc: "Wealth transfers without a strategy become wealth losses. We protect your estate so it reaches the people you intend, completely intact.",
       icon: <FiAperture size={32} />
     },
     {
       title: "Bookkeeping Services",
-      desc: "Real-time books, zero lag. You see your exact margins every day — not at the end of the quarter when it's too late to act.",
+      desc: "Real-time books with zero lag. You see your exact margins every day. We ensure you never wait until the end of the quarter when it is too late to act.",
       icon: <FiBook size={32} />
     }
   ];

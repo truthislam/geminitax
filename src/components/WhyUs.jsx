@@ -5,7 +5,7 @@ import { FiTarget, FiShield } from 'react-icons/fi';
 const features = [
   {
     title: "Passionate & Extraordinarily Skilled.",
-    desc: "We don't just file your returns; we engineer the tax position you should have had years ago. Our team is passionate about executing complex structuring with surgical precision — so compliance is never a hurdle.",
+    desc: "We don't just file your returns; we engineer the tax position you should have had years ago. Our team is passionate about executing complex structuring with surgical precision, ensuring compliance is never a hurdle.",
     points: ["Available when you need us.", "Complex structuring made simple.", "Proactive, not reactive."],
     icon: <FiTarget size={32} color="var(--color-accent)" />,
     imageReverse: false,
@@ -13,7 +13,7 @@ const features = [
   },
   {
     title: "Prompt, Thorough, and Accurate.",
-    desc: "A seamless, transparent, and efficient process. We guarantee zero surprises in your financials. Most accounting firms react to your past — we build the reporting infrastructure that scales your future.",
+    desc: "A seamless, transparent, and efficient process. We guarantee zero surprises in your financials. Most accounting firms react to your past. We build the reporting infrastructure that scales your future.",
     points: ["Highly responsive communication.", "Proactive advice and support.", "Audit-ready at all times."],
     icon: <FiShield size={32} color="var(--color-accent)" />,
     imageReverse: true,

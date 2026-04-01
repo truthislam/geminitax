@@ -47,7 +47,7 @@ export default function CtaSection() {
               whileHover={{ scale: 1.03, boxShadow: "0 0 40px rgba(255,255,255,0.3)" }}
               whileTap={{ scale: 0.98 }}
             >
-              Claim Your Strategy Session — No Obligation.
+              Claim Your Strategy Session (No Obligation)
             </motion.a>
           </div>
 

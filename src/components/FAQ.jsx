@@ -5,19 +5,19 @@ import { FiChevronDown } from 'react-icons/fi';
 const faqs = [
   {
     q: "What size businesses do you work with?",
-    a: "Primarily small to mid-market businesses generating between $500K and $20M annually. If you're scaling past that range, we'll tell you directly whether we're still the right fit — or connect you to someone who is."
+    a: "Primarily small to mid-market businesses generating between $500K and $20M annually. If you're scaling past that range, we will tell you directly whether we're still the right fit, or connect you to someone who is."
   },
   {
     q: "Why outsource instead of hiring in-house?",
-    a: "In-house accountants cost $60K–$120K in salary alone — before benefits, turnover, and supervision overhead. Gemini gives you a full team, from bookkeeper to Virtual CFO, for a fraction of that cost. The team doesn't call in sick and doesn't need managing."
+    a: "In-house accountants cost $60K–$120K in salary alone, and that is before benefits, turnover, and supervision overhead. Gemini gives you a full team, from bookkeeper to Virtual CFO, for a fraction of that cost. The team doesn't call in sick and doesn't need managing."
   },
   {
     q: "Is this just bookkeeping, or actual proactive tax strategy?",
-    a: "Bookkeeping is historical data. Our real value is proactive tax strategy — engineered before the year closes, not after. We map your real-time financials against current tax code to execute entity structuring, R&D credits, and liability compression while there’s still time to act."
+    a: "Bookkeeping is historical data. Our real value is proactive tax strategy engineered before the year closes rather than after. We map your real-time financials against current tax code to execute entity structuring, R&D credits, and liability compression while there’s still time to act."
   },
   {
     q: "How fast do we see results?",
-    a: "Most clients identify immediate savings opportunities during the discovery phase. Structural results — optimized tax position, cash flow clarity — materialize within 90 days of engagement."
+    a: "Most clients identify immediate savings opportunities during the discovery phase. Structural results like an optimized tax position and cash flow clarity materialize within 90 days of engagement."
   },
   {
     q: "Who handles our account day-to-day?",

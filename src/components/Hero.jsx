@@ -48,7 +48,7 @@ export default function Hero() {
           </motion.h1>
           
           <motion.p className="hero-subtitle" variants={childVariants} style={{ fontSize: '1.25rem', color: 'var(--color-text-muted)', lineHeight: '1.6', fontFamily: 'Plus Jakarta Sans, sans-serif' }}>
-            Philadelphia-area business owners and investors retain Gemini to build the tax strategy their revenue demands — and their current CPA never built.
+            Philadelphia-area business owners and investors retain Gemini to build the exact tax strategy their revenue demands. The strategy their current CPA never built.
           </motion.p>
           
           <motion.div className="hero-actions" variants={childVariants}>
