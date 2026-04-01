@@ -2,12 +2,13 @@
 
 :root {
   /* Enterprise SaaS Color Palette */
-  --color-primary: #0f172a; /* Main Navy Blue */
-  --color-heading: #020617; /* Near black */
+  --color-primary: #0f172a; /* The One True Navy */
+  --color-heading: #0f172a; /* Unified */
   --color-text: #334155;
   --color-text-muted: #64748b;
-  --color-accent: #0f172a; /* Unified Navy */
+  --color-accent: #0f172a; /* Unified */
   --color-accent-hover: #1e293b;
+
   --color-accent-light: #f1f5f9;
 
   --color-surface: #ffffff;

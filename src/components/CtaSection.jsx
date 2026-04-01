@@ -5,19 +5,13 @@ export default function CtaSection() {
   return (
     <section id="contact" className="cta-section" style={{ 
       position: 'relative',
-      background: 'radial-gradient(circle at 50% 100%, #1e1b4b 0%, #020617 80%)', // Deep Navy to Slate
+      background: 'var(--color-primary)', 
       color: 'white', 
       padding: '8rem 0',
       overflow: 'hidden'
     }}>
-      
-      {/* Absolute Ambient Mesh for Depth */}
-      <div style={{
-        position: 'absolute', top: '-50%', left: '50%', transform: 'translateX(-50%)',
-        width: '100%', height: '200%',
-        background: 'radial-gradient(ellipse at top, rgba(37, 99, 235, 0.15) 0%, rgba(255,255,255,0) 60%)',
-        pointerEvents: 'none', filter: 'blur(40px)'
-      }} />
+
+
 
       <div className="container text-center" style={{ position: 'relative', zIndex: 10 }}>
         <motion.div 
