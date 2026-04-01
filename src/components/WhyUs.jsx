@@ -54,7 +54,7 @@ const ChartMockup = () => (
     {/* Floating Glass Element */}
     <motion.div 
       initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: 0.8 }}
-      style={{ position: 'absolute', bottom: '15%', right: '-5%', background: 'var(--glass-bg)', backdropFilter: 'var(--glass-filter)', border: '1px solid var(--glass-border)', padding: '1.25rem', borderRadius: 'var(--radius-lg)', boxShadow: 'var(--shadow-lg)' }}
+      style={{ position: 'absolute', bottom: '12%', right: '5%', background: 'var(--glass-bg)', backdropFilter: 'var(--glass-filter)', border: '1px solid var(--glass-border)', padding: '1.25rem', borderRadius: 'var(--radius-lg)', boxShadow: 'var(--shadow-lg)', whiteSpace: 'nowrap' }}
     >
       <div style={{ fontSize: '0.8rem', color: 'var(--color-text-muted)', fontWeight: 600, marginBottom: '0.2rem' }}>Q4 Estimated Tax</div>
       <div style={{ fontSize: '1.15rem', fontWeight: 700, color: 'var(--color-heading)', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
@@ -168,7 +168,7 @@ export default function WhyUs() {
 
               {/* High-Fidelity Mockup Container */}
               <div className="why-image-wrapper" style={{ flex: 1.2, height: '480px', position: 'relative' }}>
-                <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: 'var(--color-surface-soft)', borderRadius: 'var(--radius-2xl)', border: '1px solid var(--color-border)', overflow: 'hidden' }}>
+                <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: 'var(--color-surface-soft)', borderRadius: 'var(--radius-2xl)', border: '1px solid var(--color-border)' }}>
                     <div className="ambient-mesh" style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: '80%', height: '80%', background: 'radial-gradient(circle, rgba(37,99,235,0.05) 0%, rgba(255,255,255,0) 70%)', filter: 'blur(40px)' }} />
                     {feature.mockupType === 'chart' ? <ChartMockup /> : <GlassCardsMockup />}
                 </div>
