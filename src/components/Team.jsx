@@ -3,13 +3,6 @@ import { motion } from 'framer-motion';
 
 const teamMembers = [
   {
-    name: "Saad Chaudhri, CPA",
-    role: "Founder & Lead Advisor",
-    initials: "SC",
-    color: "linear-gradient(135deg, #0f172a, #334155)",
-    bio: "Guides business owners with clear tax and financial strategy. Saad turns complex financial decisions into simple growth plans for your company."
-  },
-  {
     name: "Faisal Riaz",
     role: "Data Analytics Advisory",
     initials: "FR",
