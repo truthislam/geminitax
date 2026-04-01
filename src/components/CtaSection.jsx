@@ -28,15 +28,15 @@ export default function CtaSection() {
           style={{ maxWidth: '800px', margin: '0 auto' }}
         >
           <div style={{ display: 'inline-flex', padding: '0.5rem 1rem', background: 'rgba(255,255,255,0.05)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: '999px', color: '#94a3b8', fontSize: '0.9rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.05em', marginBottom: '2rem', fontFamily: 'Plus Jakarta Sans, sans-serif' }}>
-            Seamless and Transparent Process
+            Media, PA · Serving Greater Philadelphia & Camden County
           </div>
 
           <h2 style={{ fontSize: '4rem', color: 'white', marginBottom: '1.5rem', letterSpacing: '-0.02em', lineHeight: 1.1, fontFamily: 'Playfair Display, serif' }}>
-            Ready to streamline your accounting?
+            Stop Overpaying Your Taxes. Start Building Your Wealth.
           </h2>
           
           <p style={{ fontSize: '1.35rem', color: '#94a3b8', marginBottom: '3rem', lineHeight: '1.6', fontFamily: 'Plus Jakarta Sans, sans-serif' }}>
-            At Gemini, we believe in making the onboarding process seamless, transparent, and efficient so you can get back to what you love.
+            Gemini serves a selective roster of businesses and families across Media, the Philly suburbs, and Camden County. If you're generating revenue and not running a proactive tax plan, you are leaving money on the table every single quarter.
           </p>
           
           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1rem' }}>
@@ -47,7 +47,7 @@ export default function CtaSection() {
               whileHover={{ scale: 1.03, boxShadow: "0 0 40px rgba(255,255,255,0.3)" }}
               whileTap={{ scale: 0.98 }}
             >
-              Get In Touch
+              Claim Your Strategy Session — No Obligation.
             </motion.a>
           </div>
 

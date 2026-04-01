@@ -20,10 +20,10 @@ export default function Testimonials() {
     <section className="testimonials-section section" style={{ backgroundColor: 'var(--color-surface-soft)', borderTop: '1px solid var(--color-border)', borderBottom: '1px solid var(--color-border)', overflow: 'hidden' }}>
       <div className="container" style={{ marginBottom: '4rem', textAlign: 'center' }}>
         <h2 style={{ fontSize: '2.5rem', color: 'var(--color-primary)', marginBottom: '1rem', letterSpacing: '-0.02em' }}>
-          Verified Capital Growth
+          What Happens When Your Numbers Are Finally in the Right Hands.
         </h2>
         <p className="text-muted" style={{ maxWidth: '600px', margin: '0 auto', fontSize: '1.15rem' }}>
-          Read transparent outcomes from founders who fired their traditional CPAs.
+          Verified Google reviews from business owners across Greater Philadelphia who made the switch.
         </p>
       </div>
 

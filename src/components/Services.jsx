@@ -5,23 +5,23 @@ import { FiPieChart, FiBriefcase, FiAperture, FiBook } from 'react-icons/fi';
 export default function Services() {
   const services = [
     {
-      title: "Proactive Tax Planning",
-      desc: "Stop worrying about April 15th. We map out precise, year-round strategies to minimize your business and personal tax liability using advanced entity structuring and R&D deduction optimization.",
+      title: "Tax Services",
+      desc: "We don't file returns. We build the tax position you should have had years ago. Business and personal, combined.",
       icon: <FiPieChart size={32} />
     },
     {
       title: "Virtual CFO",
-      desc: "Financial leadership on demand. We build granular cash flow forecasts, optimize pricing models, and provide hard, data-driven insights so you can confidently scale your operations without guesswork.",
+      desc: "Financial leadership on demand at a fraction of the cost of a full-time C-suite hire. Cash flow clarity. Growth roadmaps. Hard decisions made easy.",
       icon: <FiBriefcase size={32} />
     },
     {
-      title: "Trust & Estate Structuring",
-      desc: "Secure generational wealth. Navigate complex asset transfers, real estate depreciation schedules (1031 exchanges), and legal entity layering with absolute compliance and minimal leakage.",
+      title: "Trust & Estate Planning",
+      desc: "Wealth transfers without a strategy become wealth losses. We protect your estate so it reaches the people you intend — intact.",
       icon: <FiAperture size={32} />
     },
     {
-      title: "Real-Time Bookkeeping",
-      desc: "Accurate, automated ledgers synced directly to your bank and payroll. You always know your exact bottom line, allowing you to react instantly to market conditions.",
+      title: "Bookkeeping Services",
+      desc: "Real-time books, zero lag. You see your exact margins every day — not at the end of the quarter when it's too late to act.",
       icon: <FiBook size={32} />
     }
   ];
@@ -39,10 +39,10 @@ export default function Services() {
              transition={{ duration: 0.5 }}
           >
             <h2 style={{ fontSize: '3rem', color: 'var(--color-primary)', marginBottom: '1.5rem', letterSpacing: '-0.04em', lineHeight: 1.1 }}>
-              Our Core <br/>Expertise
+              Four Disciplines. <br/>One Firm. <br/>Zero Surprises.
             </h2>
             <p className="text-muted" style={{ fontSize: '1.15rem', marginBottom: '2.5rem', lineHeight: 1.6 }}>
-              Data-backed financial solutions designed to empower and scale your enterprise. We do not use boilerplate templates.
+              Most accounting firms react to your past. We engineer your future.
             </p>
             <a href="#contact" className="btn btn-primary" style={{ padding: '0.875rem 2rem', fontSize: '1.05rem' }}>
               Schedule a Consultation

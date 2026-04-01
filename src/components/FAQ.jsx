@@ -4,20 +4,28 @@ import { FiChevronDown } from 'react-icons/fi';
 
 const faqs = [
   {
-    q: "Will I be passed off to a junior bookkeeper?",
-    a: "No. The Gemini advantage is that you are paired with a dedicated CPA and Virtual CFO. They learn the intricacies of your business model, are available for strategic calls, and actively review your finances."
+    q: "What size businesses do you work with?",
+    a: "Primarily small to mid-market businesses generating between $500K and $20M annually. If you're scaling past that range, we'll tell you directly whether we're still the right fit — or connect you to someone who is."
   },
   {
-    q: "How fast is the onboarding process?",
-    a: "We deploy an incredibly streamlined onboarding protocol. Within 48 hours of engagement, we connect directly to your banks, payroll, and existing accounting software via secure API integrations to begin our initial diagnostic."
-  },
-  {
-    q: "Do you integrate with my current software stack?",
-    a: "Absolutely. We are certified partners with industry standards like QuickBooks Online and Xero. We integrate directly with Gusto for payroll, Stripe for revenue processing, and TaxDome for secure document transfer."
+    q: "Why outsource instead of hiring in-house?",
+    a: "In-house accountants cost $60K–$120K in salary alone — before benefits, turnover, and supervision overhead. Gemini gives you a full team, from bookkeeper to Virtual CFO, for a fraction of that cost. The team doesn't call in sick and doesn't need managing."
   },
   {
     q: "Is this just bookkeeping, or actual proactive tax strategy?",
-    a: "Bookkeeping is just the historical data. Our true value is proactive tax strategy. We map your real-time data against current tax code to execute entity structuring, R&D credits, and end-of-year tax minimization protocols before the year even ends."
+    a: "Bookkeeping is historical data. Our real value is proactive tax strategy — engineered before the year closes, not after. We map your real-time financials against current tax code to execute entity structuring, R&D credits, and liability compression while there’s still time to act."
+  },
+  {
+    q: "How fast do we see results?",
+    a: "Most clients identify immediate savings opportunities during the discovery phase. Structural results — optimized tax position, cash flow clarity — materialize within 90 days of engagement."
+  },
+  {
+    q: "Who handles our account day-to-day?",
+    a: "A named team lead with direct access. Not a helpdesk queue. Not a junior associate who escalates your questions upstream. The team that built your strategy is the team you talk to."
+  },
+  {
+    q: "What if we’re not ready for full service?",
+    a: "We have entry points. A standalone tax review or bookkeeping cleanup is a legitimate starting point. Most clients expand the engagement within 60 days of seeing the impact."
   }
 ];
 
@@ -99,10 +107,10 @@ export default function FAQ() {
         
         <div className="text-center" style={{ marginBottom: '3.5rem' }}>
           <h2 style={{ fontSize: '3rem', color: 'var(--color-heading)', marginBottom: '1rem', letterSpacing: '-0.02em', fontFamily: 'Playfair Display, serif' }}>
-            Frequent Questions
+            Straight Answers to the Questions Most Firms Dodge.
           </h2>
           <p className="text-muted" style={{ fontSize: '1.2rem', fontFamily: 'Plus Jakarta Sans, sans-serif' }}>
-            Everything you need to know about our process and workflow.
+            If you have a question we haven't addressed, your first call with Gemini will.
           </p>
         </div>
 

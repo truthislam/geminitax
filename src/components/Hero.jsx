@@ -44,11 +44,11 @@ export default function Hero() {
           animate="visible"
         >
           <motion.h1 className="hero-title text-gradient" variants={childVariants}>
-            Expert CPAs & Tax Advisors
+            Stop Paying Your Government More Than You Owe.
           </motion.h1>
           
           <motion.p className="hero-subtitle" variants={childVariants} style={{ fontSize: '1.25rem', color: 'var(--color-text-muted)', lineHeight: '1.6', fontFamily: 'Plus Jakarta Sans, sans-serif' }}>
-            We help business owners save money, manage taxes, and grow faster. Discover clear, expert bookkeeping, trust planning, and Virtual CFO services.
+            Philadelphia-area business owners and investors retain Gemini to build the tax strategy their revenue demands — and their current CPA never built.
           </motion.p>
           
           <motion.div className="hero-actions" variants={childVariants}>
@@ -58,7 +58,7 @@ export default function Hero() {
               whileHover={{ y: -3, scale: 1.02, boxShadow: "var(--shadow-glow)" }}
               whileTap={{ y: 0, scale: 0.98 }}
             >
-              Get Started
+              Build Your Strategy →
             </motion.a>
             <motion.a 
               href="#core-competencies" 

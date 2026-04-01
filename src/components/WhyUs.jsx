@@ -4,17 +4,17 @@ import { FiTarget, FiShield } from 'react-icons/fi';
 
 const features = [
   {
-    title: "Passionate & Extraordinarily Skilled",
-    desc: "We don't just file your returns; we solve the hardest problems in the simplest ways. Our team is passionate about finding tailored strategies that make your tax filing process entirely smooth and stress-free.",
-    points: ["Available when you need us", "Complex problem solving", "Transparent and simple strategies"],
+    title: "Passionate & Extraordinarily Skilled.",
+    desc: "We don't just file your returns; we engineer the tax position you should have had years ago. Our team is passionate about executing complex structuring with surgical precision — so compliance is never a hurdle.",
+    points: ["Available when you need us.", "Complex structuring made simple.", "Proactive, not reactive."],
     icon: <FiTarget size={32} color="var(--color-accent)" />,
     imageReverse: false,
     mockupType: 'chart'
   },
   {
-    title: "Prompt, Thorough, and Accurate",
-    desc: "A seamless, transparent, and efficient process. We guarantee expertise and attention to detail so you can relax knowing your personal and business compliance is handled correctly.",
-    points: ["Highly responsive communication", "Proactive advice and support", "Clear explanations of strategies"],
+    title: "Prompt, Thorough, and Accurate.",
+    desc: "A seamless, transparent, and efficient process. We guarantee zero surprises in your financials. Most accounting firms react to your past — we build the reporting infrastructure that scales your future.",
+    points: ["Highly responsive communication.", "Proactive advice and support.", "Audit-ready at all times."],
     icon: <FiShield size={32} color="var(--color-accent)" />,
     imageReverse: true,
     mockupType: 'glass-cards'
@@ -122,10 +122,10 @@ export default function WhyUs() {
         
         <div className="text-center mb-8">
           <h2 style={{ fontSize: '3rem', color: 'var(--color-heading)', marginBottom: '1rem', letterSpacing: '-0.02em', fontFamily: 'Playfair Display, serif' }}>
-            A Tailored, Client-First Approach
+            Seamless by Design. Profitable by Default.
           </h2>
           <p className="text-muted" style={{ maxWidth: '600px', margin: '0 auto', fontSize: '1.15rem', fontFamily: 'Plus Jakarta Sans, sans-serif' }}>
-            At Gemini Accounting & Advisory Services, our core values are the foundation of every relationship we build.
+            From your first call to your dedicated accounting team, we run a proven system that removes guesswork entirely.
           </p>
         </div>
 
